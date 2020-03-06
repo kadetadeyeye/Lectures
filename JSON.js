@@ -20,13 +20,13 @@ var car = {
     "name" : "Bentley Bentayaga",
     "model" : "BenZ089",
     "color" : "Blue",
-    "is_Bullet_Proof" : false
+
 }
 
 //To access car
 car.name;
 car.model;
-car.is_Bullet_Proof;
+
 
 
 //Nested Array
@@ -54,8 +54,7 @@ car.name.car_type[2].model;
 //JSON.stringify()
 
 var userProfile = {
-    "first_Name" : "Gbenga",
-    "last_Name" : "Adeyeye",
+
     "gender" : "Male"
 }
 var a = JSON.stringify(userProfile); //this will converts the object into string
@@ -63,8 +62,7 @@ var a = JSON.stringify(userProfile); //this will converts the object into string
 
 //JSON.parse()
 var userProfile = {
-    "first_Name" : "Gbenga",
-    "last_Name" : "Adeyeye",
+
     "gender" : "Male"
 }
 var a = JSON.parse(userProfile); //this will converts the strings back into objects
