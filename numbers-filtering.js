@@ -27,24 +27,49 @@ var evens = numbers.filter(function(x) {
     } 
     ];
 
+    //1. Where user score above 12
+    for(var i = 0; i< userScore.length;i++){
+        if (userScore[i].score > 12) {
+            console.log(userScore[i]);
+            
+        }
+    }
+   if(userScore[0].score && userScore[1].score && userScore[2].score > 12){
+    console.log();
+   }
     
-    //to sort
-    userScore.sort([].score);
-    userScore.reverse([].score);
-
-    //sum the total score
+    //2.  to sort
+    
+   userScore.sort((a,b) => {
+       if(a.score > b.score){
+           return 1 
+       }else{
+           return -1
+       }
+   })
+   console.log(userScore);
+   
+   //3. looping through the array
+   for(var i=1; i < userScore.length; i++){
+       console.log(userScore[i]);
+       
+   }
+    
+    //4. sum the total score
     var sum = userScore[0].score + userScore[1].score + userScore[2].score;
     console.log(sum);
 
-    //merge
-    var userScore = newUserscore
-    newUserscore.push(
+    //5. merge
+    var newUserscore
+    newUserscore = [
         
             {id: 5, name: 'wale', score: 34},  
             {id: 6, name: 'wole', score: 12},  
             {id: 4, name: 'bobby', score: 27}
-    )
-    console.log(newUserscore);
+    ];
+        var merge = userScore.concat(newUserscore);
+        console.log(merge);
+        
     
     
  
