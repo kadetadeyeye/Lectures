@@ -14,7 +14,7 @@ console.log(colors);
 
 //replace the middle with red
 
-colors.splice(1,1,"red")
+colors.splice(Math.floor(colors.length/2), 1, "red")
 
 console.log(colors);
 
